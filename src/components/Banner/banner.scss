@@ -1,4 +1,4 @@
-section {
+.banner {
   margin: 40px 80px;
   height: 223px;
   overflow: hidden;
@@ -25,5 +25,22 @@ section {
     transform: translate(-50%, -50%);
     text-align: center;
     text-shadow: 0 0 6px black;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin: 20px 15px;
+    height: 111px;
+    border-radius: 10px;
+
+    p {
+      max-width: 225px;
+      font-size: 24px;
+      text-align: left;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
   }
 }
