@@ -1,5 +1,7 @@
+@use '../../styles/variables.scss' as vars;
+
 .banner {
-  margin: 40px 80px;
+  margin: vars.$margin-desktop;
   height: 223px;
   overflow: hidden;
   border-radius: 25px;
@@ -16,7 +18,7 @@
   p {
     width: 100%;
     color: white;
-    font-family: 'Montserrat';
+    font-family: vars.$primary-font;
     font-weight: 700;
     font-size: 48px;
     position: absolute;
@@ -26,11 +28,9 @@
     text-align: center;
     text-shadow: 0 0 6px black;
   }
-}
 
-@media (max-width: 768px) {
-  .banner {
-    margin: 20px 15px;
+  @media (max-width: 768px) {
+    margin: vars.$margin-mobile;
     height: 111px;
     border-radius: 10px;
 

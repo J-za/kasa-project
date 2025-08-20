@@ -2,11 +2,16 @@ import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Card/Card'
 import accommodations from '../../datas/accommodations.json'
 import './Home.scss'
+import HomeBanner from '../../assets/home-banner.png'
 
 function Home() {
   return (
     <>
-      <Banner />
+      <Banner
+        imagesrc={HomeBanner}
+        altText="Photo d'une côte entre mer et falaise"
+        text="Chez vous, partout et ailleurs"
+      />
       <section className="gallery">
         {accommodations.map((accommodation) => (
           <Card

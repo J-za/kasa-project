@@ -1,11 +1,10 @@
-import HomeBanner from '../../assets/home-banner.png'
 import './banner.scss'
 
-function Banner() {
+function Banner({ imagesrc, altText, text }) {
   return (
     <section className="banner">
-      <img src={HomeBanner} alt="Photo d'une cote entre mer et falaise" />
-      <p>Chez vous, partout et ailleurs</p>
+      <img src={imagesrc} alt={altText} />
+      {text && <p>{text}</p>}
     </section>
   )
 }
