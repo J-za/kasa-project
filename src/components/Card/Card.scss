@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as vars;
+
 .card {
   position: relative;
   width: 100%;
@@ -29,7 +31,7 @@
     filter: brightness(50%);
   }
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     height: auto;
     max-width: 100%;
     margin: auto;

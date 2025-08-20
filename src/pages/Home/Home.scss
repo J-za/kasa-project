@@ -1,5 +1,7 @@
+@use '../../styles/variables.scss' as vars;
+
 .gallery {
-  margin: 40px 80px;
+  margin: vars.$margin-desktop;
   background-color: #f6f6f6;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -9,7 +11,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    margin: 20px 15px;
+    margin: vars.$margin-mobile;
     padding: 0;
     background-color: #f6f6f6;
     gap: 20px;

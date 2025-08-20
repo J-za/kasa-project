@@ -1,6 +1,8 @@
+@use '../../styles/variables.scss' as vars;
+
 header {
-  font-family: 'Montserrat';
-  margin: 40px 80px;
+  font-family: vars.$primary-font;
+  margin: vars.$margin-desktop;
   height: 68px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +22,7 @@ header {
       text-decoration: none;
       font-size: 24px;
       font-weight: 500;
-      &:hover {
+      &.active {
         text-decoration: underline;
       }
     }
@@ -29,7 +31,7 @@ header {
 
 @media (max-width: 768px) {
   header {
-    margin: 10px 15px;
+    margin: vars.$margin-mobile;
 
     img {
       width: 145px;
