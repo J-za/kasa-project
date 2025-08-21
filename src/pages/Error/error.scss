@@ -1,0 +1,48 @@
+@use '../../styles/variables.scss' as vars;
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin: 40px 0 100px 0;
+  }
+
+  p {
+    font-family: vars.$primary-font;
+    font-weight: 500;
+    font-size: 36px;
+    color: vars.$primary-color;
+    margin: 40px 50px 100px 50px;
+  }
+
+  .home-link {
+    color: black;
+    font-family: vars.$primary-font;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    margin: 40px 0 100px 0;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      margin: 100px 0 100px 0;
+      width: 198px;
+      height: 99px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      margin: 40px 50px 70px 50px;
+    }
+
+    .home-link {
+      font-size: 14px;
+      margin: 40px 0 120px 0;
+    }
+  }
+}
