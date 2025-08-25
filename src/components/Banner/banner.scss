@@ -20,13 +20,17 @@
     color: white;
     font-family: vars.$primary-font;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     text-shadow: 0 0 6px black;
+  }
+
+  @media (max-width: 1024px) {
+    margin: vars.$margin-tablet;
   }
 
   @media (max-width: 768px) {
@@ -36,7 +40,7 @@
 
     p {
       max-width: 225px;
-      font-size: 24px;
+      font-size: 1.5em;
       text-align: left;
       top: 50%;
       left: 20px;
