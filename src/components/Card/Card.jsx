@@ -3,12 +3,10 @@ import './Card.scss'
 
 function Card({ id, title, cover }) {
   return (
-    <article>
-      <Link to={`/accomodation/${id}`} className="card">
-        <img src={cover} alt={`Photo du logement : ${title}`} />
-        <h2>{title}</h2>
-      </Link>
-    </article>
+    <Link to={`/accomodation/${id}`} className="card">
+      <img src={cover} alt={`Photo du logement : ${title}`} />
+      <h2>{title}</h2>
+    </Link>
   )
 }
 
