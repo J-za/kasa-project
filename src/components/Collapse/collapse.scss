@@ -16,7 +16,7 @@
     h2 {
       color: #ffffff;
       font-family: vars.$primary-font;
-      font-size: 24px;
+      font-size: 1.5em;
       font-weight: 700;
     }
 
@@ -61,7 +61,7 @@
 
     p {
       font-family: vars.$primary-font;
-      font-size: 18px;
+      font-size: 1.125em;
       font-weight: 400;
       padding: 10px;
     }
@@ -80,7 +80,7 @@
       }
 
       h2 {
-        font-size: 13px;
+        font-size: 0.813em;
       }
     }
 
@@ -88,7 +88,7 @@
       transform: translateY(-60%);
 
       p {
-        font-size: 12px;
+        font-size: 0.75em;
         padding: 17px;
       }
     }

@@ -9,6 +9,11 @@
   padding: 40px 40px;
   border-radius: 25px;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    margin: vars.$margin-tablet;
+  }
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     margin: vars.$margin-mobile;
