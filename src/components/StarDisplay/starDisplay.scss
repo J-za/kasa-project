@@ -1,0 +1,16 @@
+.star-display {
+  display: flex;
+  gap: 6px;
+
+  .star-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .star-icon {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
