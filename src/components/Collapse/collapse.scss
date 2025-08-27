@@ -1,8 +1,6 @@
 @use '../../styles/variables.scss' as vars;
 
 .collapse {
-  margin: 10px 208px 30px 208px;
-
   .collapse-header {
     background-color: vars.$primary-color;
     border-radius: 5px;
@@ -47,7 +45,7 @@
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transform: translateY(-80%);
+    transform: translateY(-50%);
     transition: max-height 0.1s ease-in, opacity 0.1s ease-in,
       transform 0.1s ease-in;
 
@@ -68,8 +66,6 @@
   }
 
   @media (max-width: 768px) {
-    margin: vars.$margin-mobile;
-
     .collapse-header {
       padding: 10px 6px 10px 10px;
       .collapse-toggle-button {

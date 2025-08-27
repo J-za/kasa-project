@@ -1,0 +1,13 @@
+@use '../../styles/variables.scss' as vars;
+
+.collapse-about {
+  margin: 10px 208px 30px 208px;
+
+  @media (max-width: 1024px) {
+    margin: 10px 178px 30px 178px;
+  }
+
+  @media (max-width: 768px) {
+    margin: vars.$margin-mobile;
+  }
+}

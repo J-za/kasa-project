@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { Children, useState } from 'react'
 import CloseVector from '../../assets/close-vector.svg'
 import './collapse.scss'
 
-function Collapse({ title, text }) {
+function Collapse({ title, children, className = '' }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${className}`}>
       <div className="collapse-header">
         <h2>{title}</h2>
         <button
@@ -21,7 +21,7 @@ function Collapse({ title, text }) {
         </button>
       </div>
       <div className={`collapse-content ${isOpen ? 'active' : ''}`}>
-        <p>{text}</p>
+        {children}
       </div>
     </div>
   )
