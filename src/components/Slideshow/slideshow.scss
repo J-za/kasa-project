@@ -1,0 +1,84 @@
+@use '../../styles/variables.scss' as vars;
+
+.slideshow {
+  margin: vars.$margin-desktop;
+  position: relative;
+  height: 415px;
+  overflow: hidden;
+
+  .slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &.inactive {
+      opacity: 0;
+    }
+  }
+
+  .nav-vector-right,
+  .nav-vector-left {
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 46px;
+      height: 79px;
+    }
+  }
+
+  .nav-vector-right {
+    right: 20px;
+  }
+
+  .nav-vector-left {
+    left: 20px;
+  }
+
+  .counter {
+    position: absolute;
+    bottom: 15px;
+    right: 50%;
+    transform: translateX(50%);
+    color: white;
+    font-size: 1.125em;
+    font-family: vars.$primary-font;
+    z-index: 2;
+  }
+
+  @media (max-width: 768px) {
+    margin: vars.$margin-mobile;
+    height: 255px;
+
+    .slide-image {
+      height: 255px;
+      border-radius: 10px;
+    }
+
+    .nav-vector-right,
+    .nav-vector-left {
+      img {
+        width: 12px;
+        height: 20px;
+      }
+    }
+
+    .counter {
+      display: none;
+    }
+  }
+}
