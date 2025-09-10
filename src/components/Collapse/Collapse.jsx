@@ -11,7 +11,7 @@ function Collapse({ title, children, className = '' }) {
         <h2>{title}</h2>
         <button
           className="collapse-toggle-button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((prev) => !prev)}
         >
           <img
             src={CloseVector}
