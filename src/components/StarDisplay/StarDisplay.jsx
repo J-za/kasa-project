@@ -8,6 +8,7 @@ function StarDisplay({ rating }) {
 
   return (
     <div className="star-display">
+      {/* Affiche l’étoile pleine si l’index est inférieur à la note */}
       {[...Array(maxStars)].map((_, i) => (
         <img
           key={i}

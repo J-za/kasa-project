@@ -28,6 +28,7 @@ function Accommodation() {
         </section>
         <section className="host-details">
           <div className="host-content">
+            {/*Insertion d'un saut de ligne entre le prénom et le nom.*/}
             <p>{accommodation.host.name.replace(' ', '\n')}</p>
             <img
               src={accommodation.host.picture}
@@ -39,6 +40,7 @@ function Accommodation() {
       </section>
       <section className="collapse-accommodation">
         <Collapse
+          // Concatenation de l'ID avec un suffixe unique pour éviter les conflits de clé.
           key={`${accommodation.id}-description`}
           title="Description"
           className="collapse-accommodation-item"
