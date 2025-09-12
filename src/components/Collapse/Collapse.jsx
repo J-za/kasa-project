@@ -1,4 +1,4 @@
-import { Children, useState } from 'react'
+import { useState } from 'react'
 import CloseVector from '../../assets/close-vector.svg'
 import './collapse.scss'
 
