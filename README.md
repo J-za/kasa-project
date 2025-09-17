@@ -30,15 +30,17 @@ npm run dev
 
 ## 🧱 Structure du projet
 
+```txt
 src/
-├── assets/ # Images et icônes
-├── components/ # Composants réutilisables (Banner, Collapse, etc.)
-├── datas/ # Fichiers JSON simulant une API
-├── pages/ # Pages principales (Home, About, Accommodation)
-├── Router/ # Configuration des routes avec React Router
-├── styles/ # Fichiers SCSS globaux
-├── App.jsx # Composant racine de l'application
-├── main.jsx # Point d'entrée de l'application
+├── assets/              # Images et icônes
+├── components/          # Composants réutilisables (Banner, Collapse, etc.)
+├── datas/               # Fichiers JSON simulant une API
+├── pages/               # Pages principales (Home, About, Accommodation)
+├── Router/              # Configuration des routes avec React Router
+├── styles/              # Fichiers SCSS globaux
+├── App.jsx              # Composant racine de l'application
+├── main.jsx             # Point d'entrée de l'application
+```
 
 ## 🛠️ Outils et librairies utilisés
 
