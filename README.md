@@ -45,7 +45,7 @@ src/
 ## 🛠️ Outils et librairies utilisés
 
 - React : bibliothèque principale
-- React Router DOM : gestion des routes
+- React Router (v7.8.1) – Librairie de routage utilisée dans sa version core (react-router).
 - Vite : bundler ultra rapide
 - Sass (SCSS) : préprocesseur CSS
 - ESLint : vérification de la qualité du code
