@@ -1,4 +1,3 @@
-import Header from './components/Header/Header'
 import Router from './router/router'
 
 function App() {
